@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for games published by Kinopi Studio, including Planet Game.">
-    <title>Kinopi Studio Privacy Policy</title>
+    <meta name="description" content="Official support information and Privacy Policy for Planet Drop: Merge Puzzle by Kinopi Studio.">
+    <title>Planet Drop Support &amp; Privacy Policy | Kinopi Studio</title>
     <style>
         :root {
             color-scheme: light dark;
@@ -81,6 +81,10 @@
             font-size: 1.4rem;
         }
 
+        section {
+            scroll-margin-top: 20px;
+        }
+
         p, ul {
             margin: 0 0 16px;
         }
@@ -100,6 +104,29 @@
 
         .effective-date {
             margin-top: 14px;
+        }
+
+        .page-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .page-nav a {
+            display: inline-block;
+            padding: 9px 14px;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .page-nav a:hover,
+        .page-nav a:focus-visible {
+            border-color: var(--accent);
         }
 
         .summary {
@@ -135,11 +162,27 @@
             background: var(--surface);
         }
 
-        .contact {
+        .contact,
+        .support-card {
             padding: 20px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 14px;
+        }
+
+        .support-card + .support-card {
+            margin-top: 16px;
+        }
+
+        .support-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.08rem;
+        }
+
+        .support-card p:last-child,
+        .support-card ul:last-child,
+        .contact p:last-child {
+            margin-bottom: 0;
         }
 
         .back-to-top {
@@ -187,18 +230,67 @@
 <body id="top">
     <header>
         <div class="container">
-            <h1>Kinopi Studio Privacy Policy</h1>
+            <h1>Planet Drop Support &amp; Privacy</h1>
             <p class="subtitle">
-                This Privacy Policy applies to mobile games published by Kinopi Studio.
+                Official support information and Privacy Policy for Planet Drop: Merge Puzzle.
             </p>
             <p class="effective-date">
-                <strong>Effective date:</strong> July 19, 2026
+                <strong>Effective date:</strong> August 14, 2026
             </p>
+            <nav class="page-nav" aria-label="Page sections">
+                <a href="#support">Support</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="summary" aria-labelledby="summary-title">
+        <section id="support" aria-labelledby="support-title">
+            <h2 id="support-title">Planet Drop Support</h2>
+            <p>
+                Need help with <strong>Planet Drop: Merge Puzzle</strong>? Try the steps below,
+                or contact Kinopi Studio by email.
+            </p>
+
+            <div class="support-card">
+                <h3>Common Troubleshooting</h3>
+                <ul>
+                    <li>Confirm that your device is connected to the internet.</li>
+                    <li>Close the game completely, then open it again.</li>
+                    <li>Install the latest version available from the App Store or Google Play.</li>
+                    <li>If an advertisement is unavailable, wait briefly and try again later.</li>
+                </ul>
+            </div>
+
+            <div class="support-card">
+                <h3>In-App Purchases</h3>
+                <p>
+                    Stardust packs are consumable purchases processed by the Apple App Store or
+                    Google Play. Prices and payment confirmation are displayed by the store before
+                    you complete a purchase.
+                </p>
+                <p>
+                    If a completed purchase is not reflected in the game, do not immediately buy it
+                    again. Restart the game, confirm that you are using the same store account, and
+                    email us with the product name, approximate purchase time, device model, and a
+                    store receipt or order number. Do not send payment-card information.
+                </p>
+            </div>
+
+            <div class="support-card">
+                <h3>Contact Support</h3>
+                <p>
+                    Email:
+                    <a href="mailto:kinopistudio0506@gmail.com?subject=Planet%20Drop%20Support">
+                        kinopistudio0506@gmail.com
+                    </a>
+                </p>
+                <p>Please include your app version, device model, and a short description of the issue.</p>
+            </div>
+        </section>
+
+        <section id="privacy" class="summary" aria-labelledby="summary-title">
             <h2 id="summary-title">Overview</h2>
             <p>
                 Kinopi Studio (“we,” “us,” or “our”) publishes mobile games.
@@ -211,7 +303,7 @@
             <h2 id="covered-apps-title">1. Games Covered by This Policy</h2>
             <div class="app-list">
                 <ul>
-                    <li><strong>Planet Game</strong></li>
+                    <li><strong>Planet Drop: Merge Puzzle</strong></li>
                 </ul>
                 <p>
                     This list may be updated when Kinopi Studio publishes additional games.
@@ -246,7 +338,8 @@
                     <strong>Purchase information:</strong>
                     purchased products, transaction identifiers, and purchase status when
                     in-app purchases are available. Complete payment-card details are handled
-                    by Google Play and are not directly received or stored by Kinopi Studio.
+                    by the Apple App Store or Google Play and are not directly received or stored
+                    by Kinopi Studio.
                 </li>
             </ul>
         </section>
@@ -281,11 +374,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Unity Technologies</td>
-                        <td>Analytics, advertising, app diagnostics, and game services.</td>
+                        <td>Unity Technologies (including Unity Analytics, Unity Ads, LevelPlay, and Ad Quality)</td>
+                        <td>Analytics, advertising, ad mediation, ad quality, app diagnostics, and game services.</td>
                     </tr>
                     <tr>
-                        <td>Google Play services</td>
+                        <td>Google Firebase</td>
+                        <td>Remote configuration and related app services.</td>
+                    </tr>
+                    <tr>
+                        <td>Apple App Store and StoreKit</td>
+                        <td>iOS app distribution, purchases, transaction handling, and platform functionality.</td>
+                    </tr>
+                    <tr>
+                        <td>Google Play</td>
                         <td>App distribution, purchases, licensing, and platform functionality.</td>
                     </tr>
                 </tbody>
@@ -296,6 +397,12 @@
                 their own privacy documentation. Kinopi Studio is responsible for disclosing
                 the third-party services integrated into each game.
             </p>
+            <ul>
+                <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a></li>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase Privacy and Security</a></li>
+                <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            </ul>
         </section>
 
         <section aria-labelledby="sharing-title">
@@ -380,14 +487,13 @@
             </p>
         </section>
 
-        <section aria-labelledby="contact-title">
+        <section id="contact" aria-labelledby="contact-title">
             <h2 id="contact-title">12. Contact Us</h2>
             <div class="contact">
                 <p><strong>Kinopi Studio</strong></p>
-                <!-- Replace both occurrences of the email address below before publishing. -->
                 <p>
                     Email:
-                    <a href="mailto:kinopistudio0506@gmail.com">
+                    <a href="mailto:kinopistudio0506@gmail.com?subject=Planet%20Drop%20Privacy">
                         kinopistudio0506@gmail.com
                     </a>
                 </p>
